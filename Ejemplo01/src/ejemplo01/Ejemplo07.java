@@ -10,16 +10,20 @@ package ejemplo01;
  * @author reroes
  */
 public class Ejemplo07 {
+
     public static void main(String[] args) {
         // Ejemplo de uso de printf con decimales
-        
+        /* t debe ser una variable double, hay como limitarlo a los porcentajes
+        decimales ponidno un numero antes de la t
+         */
+
         double numerador = 10.0;
         double denominador = 3.0;
         double resultado = numerador / denominador;
-        
+
         System.out.printf("El resultados es: %f\n", resultado);
-        
+
         System.out.printf("El resultados es: %.2f\n", resultado);
-              
+
     }
 }
