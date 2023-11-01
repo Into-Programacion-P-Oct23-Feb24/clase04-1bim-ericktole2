@@ -17,31 +17,37 @@ public class Ejemplo2 {
     public static void main(String[] args) {
         // Ingreso de valores por teclado
         Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US); 
-        
+        entrada.useLocale(Locale.US);
+
         // declarar las variables
         String nombreAsignatura1;
         String nombreAsignatura2;
         double notaAsignatura1;
         double notaAsignatura2;
-        
+
         System.out.println("Ingrese nombre de asignatura 1");
         nombreAsignatura1 = entrada.nextLine();
         System.out.println("Ingrese nota de asignatura 1");
         notaAsignatura1 = entrada.nextDouble();
         System.out.println("Ingrese nombre de asignatura 2");
-        entrada.nextLine(); // limpieza de buffer
+        entrada.nextLine();
+        /* este se realiza cuando se intercala el uso de 
+        una cadena o nextLine ya que el espacio de esta lo utiliza el siguiente 
+        nextLine
+
+         */
+
         nombreAsignatura2 = entrada.nextLine();
         System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
-        
+
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n"
                 + "Nota 2: %.2f\n",
                 nombreAsignatura1,
                 notaAsignatura1,
                 nombreAsignatura2,
                 notaAsignatura2);
-   
+
     }
-    
+
 }
