@@ -11,10 +11,18 @@ package ejemplo01;
  */
 public class Ejemplo04 {
     public static void main(String[] args) {
-        String nombreEstudiante = "René Rolando";
-        String apellidoEstudiante = "Elizalde Solano";
+        /*
+        println= este agrega automaticamente un salto de linea depues de imprimir el texto
+        print=simplemente imprime el texto o el valor, sin agregar un saldo de linea a al final
+        
+        */
+        
+      
+       
+        String nombreEstudiante = "Erick Santiago";
+        String apellidoEstudiante = "Toledo Toledo";
         int nacimiento = 1983;
-        System.out.print(nombreEstudiante + " ");
+        System.out.println(nombreEstudiante + " ");
         System.out.print(apellidoEstudiante + " ");
         System.out.print(nacimiento + " ");
         System.out.print(nombreEstudiante + " ");
